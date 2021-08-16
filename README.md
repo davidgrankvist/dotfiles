@@ -1,5 +1,5 @@
 # dotfiles
-Dotfiles to be cloned into $HOME/.config (the default [XDG_CONFIG_HOME](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)).
+Configuration files for `$HOME/.config`.
 ## Usage
 ```bash
 cd
