@@ -8,5 +8,5 @@ mv temp/.git .config/
 rm -rf temp
 cd .config
 git checkout .
-./add-links
+./add-links.sh
 ```
