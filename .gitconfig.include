@@ -1,0 +1,11 @@
+# [include] the path to this file in ~/.gitconfig
+[core]
+    editor = nvim
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    brv = branch -vv
+    hd = diff HEAD~1 HEAD
+    pu = push -u origin HEAD
