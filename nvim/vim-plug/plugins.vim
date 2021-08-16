@@ -7,5 +7,7 @@ call plug#begin()
     Plug 'nvim-lua/completion-nvim'
     Plug 'hrsh7th/nvim-compe'
     Plug 'cespare/vim-toml'
+    Plug 'dense-analysis/ale'
+    Plug 'vim-airline/vim-airline'
 call plug#end()
 

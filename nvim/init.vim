@@ -9,6 +9,7 @@ set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
 let g:netrw_liststyle = 3
+let g:airline#extensions#ale#enabled = 1
 
 " Configure LSP
 " https://github.com/neovim/nvim-lspconfig#rust_analyzer
