@@ -6,5 +6,6 @@ call plug#begin()
     Plug 'nvim-lua/lsp_extensions.nvim'
     Plug 'nvim-lua/completion-nvim'
     Plug 'hrsh7th/nvim-compe'
+    Plug 'cespare/vim-toml'
 call plug#end()
 
