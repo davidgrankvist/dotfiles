@@ -5,5 +5,5 @@ Configuration files for `$HOME/.config`.
 cd
 git clone git@github.com:davidgrankvist/dotfiles.git .config
 cd .config
-./add-links.sh
+./setup.sh
 ```
