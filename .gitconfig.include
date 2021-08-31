@@ -1,6 +1,6 @@
 # [include] the path to this file in ~/.gitconfig
 [core]
-    editor = nvim
+    editor = vi
 [alias]
     co = checkout
     br = branch
