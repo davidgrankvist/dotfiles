@@ -5,6 +5,7 @@ lnk () {
 }
 lnk .editorconfig
 lnk .tmux.conf
+lnk .bash_aliases
 
 # Add include section to .gitconfig
 if [ -z "$(grep include $HOME/.gitconfig)" ]; then
