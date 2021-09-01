@@ -8,15 +8,14 @@ set number relativenumber
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
-" netrw as a left sidebar
-" :Ve to start
+" netrw
 let g:netrw_liststyle = 3 " treeview
 let g:netrw_banner = 0 " hide top part
 let g:netrw_browse_split = 4 " open in split + reuse buffer
 let g:netrw_altv = 1 " split ltr
 let g:netrw_winsize = 20 " buffer size in %
 
-" explore current directory on start
+" :Ve on start
 augroup ProjectDrawer
     autocmd!
     autocmd VimEnter * :Ve
