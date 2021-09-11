@@ -1,6 +1,8 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
+" fzf
 nnoremap <c-p> :Files<cr>
+" cycle LSP diagnostics
 nnoremap <silent> H           <cmd>lua vim.lsp.diagnostic.goto_prev()<cr>
 nnoremap <silent> L           <cmd>lua vim.lsp.diagnostic.goto_next()<cr>
 
