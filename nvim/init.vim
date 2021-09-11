@@ -13,12 +13,6 @@ let g:netrw_liststyle = 3 " treeview
 let g:netrw_banner = 0 " hide top part
 let g:netrw_altv = 1 " split ltr
 
-" explore on start
-augroup ProjectDrawer
-    autocmd!
-    autocmd VimEnter * :Ex
-augroup END
-
 let g:airline#extensions#ale#enabled = 1
 
 lua require 'init'
