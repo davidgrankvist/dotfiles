@@ -11,7 +11,6 @@ set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
 " netrw
-let g:netrw_liststyle = 3 " treeview
 let g:netrw_banner = 0 " hide top part
 let g:netrw_altv = 1 " split ltr
 
