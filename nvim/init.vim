@@ -1,8 +1,5 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
-" fzf
-nnoremap <c-p> :GFiles<cr>
-
 set number relativenumber
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
@@ -14,7 +11,12 @@ let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl' " line numbers
 let g:netrw_list_hide = '^\./$,^\.\./$' " hide . and ..
 let g:netrw_hide = 1 " enable hide
 
+" airline
 let g:airline#extensions#ale#enabled = 1
+
+" fzf
+nnoremap <c-p> :GFiles<cr>
+
 
 lua require 'init'
 
