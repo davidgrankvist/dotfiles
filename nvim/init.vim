@@ -3,6 +3,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 set number relativenumber
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
+nnoremap <c-t> :tabnew<cr>
 
 " netrw
 let g:netrw_banner = 0 " hide top part
