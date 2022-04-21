@@ -2,11 +2,34 @@
 [core]
     editor = vi
 [alias]
+    # checkout
     co = checkout
     cob = checkout -b
+    # branch
     br = branch
-    ci = commit
-    st = status
     brv = branch -vv
-    hd = diff HEAD~1 HEAD
+    # commit
+    cm = commit
+    cma = commit --amend
+    # status
+    st = status
+    # pull
+    pl = pull
+    plr = pull --rebase
+    # push
+    ps = push
     pu = push -u origin HEAD
+    # diff
+    d = diff
+    ds = diff --staged
+    hd = diff HEAD~1 HEAD
+    # log
+    tlog = log --oneline --decorate --graph
+    tloga = log --oneline --decorate --graph --all
+    # add
+    ada = add .
+    # merge
+    mr = merge
+    # rebase
+    rb = rebase
+    rbc = rebase --continue

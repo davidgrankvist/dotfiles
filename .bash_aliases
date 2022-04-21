@@ -1,3 +1,4 @@
 alias bat=batcat
 alias vi=nvim
 alias vim=nvim
+alias g=git
