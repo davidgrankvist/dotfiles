@@ -33,3 +33,19 @@
     # rebase
     rb = rebase
     rbc = rebase --continue
+    # difftool
+    dt = difftool
+    hdt = difftool HEAD~1 HEAD
+    # mergetool
+    mt = mergetool
+# nvim diff mode as diff and merge tool
+[diff]
+    tool = vimdiff
+[difftool "vimdiff"]
+    path = nvim
+[merge]
+    tool = vimdiff
+[mergetool]
+    keepBackup = false
+[mergetool "vimdiff"]
+    path = nvim
