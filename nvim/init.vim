@@ -5,6 +5,27 @@ set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 nnoremap <c-t> :tabnew<cr>
 
+" clipboard
+if has('wsl')
+    " This makes sure win32yank.exe is used instead of e.g. Wayland/X11 clipboard tools
+    "
+    " see:
+    "   - :help clipboard-tool for clipboard tool priority order
+    "   - nvim FAQ about accessing the clipboard from WSL https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
+    let g:clipboard = {
+          \   'name': 'win32yank.exe',
+          \   'copy': {
+          \      '+': ['win32yank.exe', '-i', '--crlf'],
+          \      '*': ['win32yank.exe', '-i', '--crlf'],
+          \    },
+          \   'paste': {
+          \      '+': ['win32yank.exe', '-o', '--lf'],
+          \      '*': ['win32yank.exe', '-o', '--lf'],
+          \   },
+          \   'cache_enabled': 1,
+          \ }
+endif
+
 " netrw
 let g:netrw_banner = 0 " hide top part
 let g:netrw_altv = 1 " split ltr
