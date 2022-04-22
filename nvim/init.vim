@@ -33,9 +33,6 @@ let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl' " line numbers
 let g:netrw_list_hide = '^\./$,^\.\./$' " hide . and ..
 let g:netrw_hide = 1 " enable hide
 
-" airline
-let g:airline#extensions#ale#enabled = 1
-
 " fzf
 nnoremap <c-p> :GFiles<cr>
 " Custom rg:

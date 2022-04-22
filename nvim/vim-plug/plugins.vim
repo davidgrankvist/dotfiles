@@ -16,8 +16,6 @@ call plug#begin()
     Plug 'hrsh7th/vim-vsnip'
     " linting
     Plug 'dense-analysis/ale'
-    " status bar
-    Plug 'vim-airline/vim-airline'
     " color theme
     Plug 'projekt0n/github-nvim-theme'
 call plug#end()
