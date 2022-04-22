@@ -52,5 +52,8 @@ endfunction
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0) " :RG command for function above
 nnoremap <c-y> :RG<cr>
 
+" github colors
+colorscheme github_dark
+
 lua require 'init'
 

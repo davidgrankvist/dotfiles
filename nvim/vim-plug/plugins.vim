@@ -18,5 +18,7 @@ call plug#begin()
     Plug 'dense-analysis/ale'
     " status bar
     Plug 'vim-airline/vim-airline'
+    " color theme
+    Plug 'projekt0n/github-nvim-theme'
 call plug#end()
 
