@@ -24,8 +24,9 @@
     ds = diff --staged
     hd = diff HEAD~1 HEAD
     # log
-    tlog = log --oneline --decorate --graph
-    tloga = log --oneline --decorate --graph --all
+    l = log
+    tl = log --oneline --decorate --graph
+    tla = log --oneline --decorate --graph --all
     # add
     ada = add .
     # merge
