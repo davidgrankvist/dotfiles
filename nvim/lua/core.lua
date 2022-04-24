@@ -4,6 +4,8 @@ vim.g.mapleader = ','
 local set = vim.opt
 set.number = true
 set.relativenumber = true
+set.ignorecase = true
+set.smartcase = true
 set.completeopt = { 'menuone', 'noinsert', 'noselect' }
 set.shortmess:append({ c = true })
 
