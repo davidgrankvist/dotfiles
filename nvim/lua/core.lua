@@ -13,11 +13,22 @@ vim.g.mapleader = ','
 local set_map = vim.api.nvim_set_keymap
 local map_opts = { noremap = true, silent = true }
 
+-- esc key
 set_map('i', 'jk', '<esc>', map_opts)
+set_map('v', 'jk', '<esc>', map_opts)
+-- highlight off
 set_map('n', '<leader><space>', ':noh<cr>', map_opts)
+-- explore
 set_map('n', '<leader>e', ':Ex<cr>', map_opts)
+-- tabs
 set_map('n', '<leader>t', ':tabnew<cr>', map_opts)
 set_map('n', '<leader>T', ':tabclose<cr>', map_opts)
+-- splits
+set_map('n', '<leader>h', '<c-w>h', map_opts)
+set_map('n', '<leader>j', '<c-w>j', map_opts)
+set_map('n', '<leader>k', '<c-w>k', map_opts)
+set_map('n', '<leader>l', '<c-w>l', map_opts)
+set_map('n', '<leader>v', '<c-w>v<c-w>l', map_opts)
 -- hjkl only
 set_map('n', '<up>', '<nop>', map_opts)
 set_map('n', '<down>', '<nop>', map_opts)
