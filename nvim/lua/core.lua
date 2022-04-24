@@ -1,3 +1,5 @@
+vim.g.mapleader = ','
+
 -- options
 local set = vim.opt
 set.number = true
@@ -10,6 +12,7 @@ set.shortmess:append({ c = true })
 local set_map = vim.api.nvim_set_keymap
 local map_opts = { noremap = true }
 set_map('n', '<c-t>', ':tabnew<cr>', map_opts)
+set_map('n', '<leader><space>', ':noh<cr>', map_opts)
 
 -- netrw
 vim.g.netrw_banner = 0 -- hide top part
