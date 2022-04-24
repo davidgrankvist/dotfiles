@@ -1,5 +1,3 @@
-vim.g.mapleader = ','
-
 -- options
 local set = vim.opt
 set.number = true
@@ -11,10 +9,24 @@ set.shortmess:append({ c = true })
 
 -- mappings
 -- see other modules for specific mappings
+vim.g.mapleader = ','
 local set_map = vim.api.nvim_set_keymap
-local map_opts = { noremap = true }
-set_map('n', '<c-t>', ':tabnew<cr>', map_opts)
+local map_opts = { noremap = true, silent = true }
+
+set_map('i', 'jk', '<esc>', map_opts)
 set_map('n', '<leader><space>', ':noh<cr>', map_opts)
+set_map('n', '<leader>e', ':Ex<cr>', map_opts)
+set_map('n', '<leader>t', ':tabnew<cr>', map_opts)
+set_map('n', '<leader>T', ':tabclose<cr>', map_opts)
+-- hjkl only
+set_map('n', '<up>', '<nop>', map_opts)
+set_map('n', '<down>', '<nop>', map_opts)
+set_map('n', '<left>', '<nop>', map_opts)
+set_map('n', '<right>', '<nop>', map_opts)
+set_map('i', '<up>', '<nop>', map_opts)
+set_map('i', '<down>', '<nop>', map_opts)
+set_map('i', '<left>', '<nop>', map_opts)
+set_map('i', '<right>', '<nop>', map_opts)
 
 -- netrw
 vim.g.netrw_banner = 0 -- hide top part
