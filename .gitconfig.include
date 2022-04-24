@@ -1,6 +1,6 @@
 # [include] the path to this file in ~/.gitconfig
 [core]
-    editor = vi
+    editor = nvim
 [alias]
     # checkout
     co = checkout
