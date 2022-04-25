@@ -5,6 +5,7 @@ call plug#begin()
     " fuzzy find
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    " formatting
     Plug 'editorconfig/editorconfig-vim'
     " autocompletion
     Plug 'hrsh7th/cmp-nvim-lsp'
