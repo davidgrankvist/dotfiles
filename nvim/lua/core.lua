@@ -17,6 +17,10 @@ local map_opts = { noremap = true, silent = true }
 set_map('i', 'jk', '<esc>', map_opts)
 set_map('c', 'jk', '<esc>', map_opts)
 set_map('v', 'jk', '<esc>', map_opts)
+-- write/quit
+set_map('n', '<leader>w', ':w<cr>', map_opts)
+set_map('n', '<leader>q', ':q<cr>', map_opts)
+set_map('n', '<leader>wq', ':x<cr>', map_opts)
 -- highlight off
 set_map('n', '<leader><space>', ':noh<cr>', map_opts)
 -- explore
