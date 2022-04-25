@@ -8,11 +8,17 @@
     # branch
     br = branch
     brv = branch -vv
+    # add
+    a = add
+    aa = add .
     # commit
     cm = commit
     cma = commit --amend
+    # add and commit
+    acm = "!git add . && git commit"
+    acma = "!git add . && git commit --amend"
     # status
-    st = status
+    s = status
     # pull
     pl = pull
     plr = pull --rebase
@@ -27,8 +33,6 @@
     l = log
     tl = log --oneline --decorate --graph
     tla = log --oneline --decorate --graph --all
-    # add
-    ada = add .
     # merge
     mr = merge
     # rebase
