@@ -39,6 +39,9 @@ set_map('i', '<up>', '<nop>', map_opts)
 set_map('i', '<down>', '<nop>', map_opts)
 set_map('i', '<left>', '<nop>', map_opts)
 set_map('i', '<right>', '<nop>', map_opts)
+-- clipboard
+set_map('n', '<leader>y', '"*y', map_opts)
+set_map('n', '<leader>p', '"*p', map_opts)
 
 -- netrw
 vim.g.netrw_banner = 0 -- hide top part
