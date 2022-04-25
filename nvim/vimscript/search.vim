@@ -15,6 +15,3 @@ endfunction
 " :RG command for function above
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
-" mappings
-nnoremap <c-p> :GFiles<cr>
-nnoremap <c-y> :RG<cr>

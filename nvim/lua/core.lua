@@ -45,6 +45,10 @@ set_map('i', '<right>', '<nop>', map_opts)
 set_map('n', '<leader>y', '"*y', map_opts)
 set_map('n', '<leader>p', '"*p', map_opts)
 set_map('n', '<leader>P', '"*P', map_opts)
+-- fzf
+set_map('n', '<leader>f', ':GFiles<cr>', map_opts)
+set_map('n', '<leader><leader>f', ':RG<cr>', map_opts) -- see search.vim for :RG definition
+set_map('n', '<leader>F', ':Files<cr>', map_opts)
 
 -- netrw
 vim.g.netrw_banner = 0 -- hide top part
