@@ -15,8 +15,8 @@ local map_opts = { noremap = true, silent = true }
 
 -- esc key
 set_map('i', 'jk', '<esc>', map_opts)
-set_map('v', 'jk', '<esc>', map_opts)
 set_map('c', 'jk', '<esc>', map_opts)
+set_map('v', 'jk', '<esc>', map_opts)
 -- highlight off
 set_map('n', '<leader><space>', ':noh<cr>', map_opts)
 -- explore
@@ -29,6 +29,8 @@ set_map('n', '<leader>h', '<c-w>h', map_opts)
 set_map('n', '<leader>j', '<c-w>j', map_opts)
 set_map('n', '<leader>k', '<c-w>k', map_opts)
 set_map('n', '<leader>l', '<c-w>l', map_opts)
+set_map('n', '<leader>c', '<c-w>c', map_opts)
+set_map('n', '<leader>s', '<c-w>s<c-w>j', map_opts)
 set_map('n', '<leader>v', '<c-w>v<c-w>l', map_opts)
 -- hjkl only
 set_map('n', '<up>', '<nop>', map_opts)
@@ -42,6 +44,7 @@ set_map('i', '<right>', '<nop>', map_opts)
 -- clipboard
 set_map('n', '<leader>y', '"*y', map_opts)
 set_map('n', '<leader>p', '"*p', map_opts)
+set_map('n', '<leader>P', '"*P', map_opts)
 
 -- netrw
 vim.g.netrw_banner = 0 -- hide top part
