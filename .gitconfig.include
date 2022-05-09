@@ -38,6 +38,11 @@
     # rebase
     rb = rebase
     rbc = rebase --continue
+    rba = rebase --abort
+    # fetch
+    f = fetch
+    # cherry-pick
+    cp = cherry-pick
     # difftool
     dt = difftool
     hdt = difftool HEAD~1 HEAD
