@@ -21,6 +21,7 @@ set_map('v', 'jk', '<esc>', map_opts)
 set_map('n', '<leader>w', ':w<cr>', map_opts)
 set_map('n', '<leader>q', ':q<cr>', map_opts)
 set_map('n', '<leader>wq', ':x<cr>', map_opts)
+set_map('n', '<leader>qa', ':qa<cr>', map_opts)
 -- highlight off
 set_map('n', '<leader><space>', ':noh<cr>', map_opts)
 -- explore
