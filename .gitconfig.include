@@ -43,6 +43,9 @@
     f = fetch
     # cherry-pick
     cp = cherry-pick
+    # stash
+    st = stash
+    sta = stash apply
     # difftool
     dt = difftool
     hdt = difftool HEAD~1 HEAD
