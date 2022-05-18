@@ -22,6 +22,7 @@
     # pull
     pl = pull
     plr = pull --rebase
+    plrm = pull --rebase origin main
     # push
     ps = push
     pu = push -u origin HEAD
