@@ -48,6 +48,8 @@
     # stash
     st = stash
     sta = stash apply
+    # clean
+    cl = clean
     # difftool
     dt = difftool
     hdt = difftool HEAD~1 HEAD
