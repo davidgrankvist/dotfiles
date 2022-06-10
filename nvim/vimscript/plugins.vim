@@ -15,8 +15,6 @@ call plug#begin()
     Plug 'hrsh7th/nvim-cmp'
     Plug 'hrsh7th/cmp-vsnip'
     Plug 'hrsh7th/vim-vsnip'
-    " linting
-    Plug 'dense-analysis/ale'
     " color theme
     Plug 'projekt0n/github-nvim-theme'
 call plug#end()
