@@ -1,73 +1,59 @@
 runtime plugins.vim
 
-lua << EOF
--- options
-local set = vim.opt
+set expandtab
+set shiftwidth=4
+set number
+set relativenumber
+set ignorecase
+set smartcase
+set completeopt="menuone,noinsert,noselect"
+set shortmess+=c
 
-set.expandtab = true
-set.shiftwidth = 4
+let g:mapleader=','
 
-set.number = true
-set.relativenumber = true
+" esc key
+inoremap <silent> jk <esc>
+cnoremap <silent> jk <esc>
+" write/quit
+nnoremap <silent> <leader>w :w<cr>
+nnoremap <silent> <leader>q :q<cr>
+nnoremap <silent> <leader><leader>w :x<cr>
+nnoremap <silent> <leader><leader>q :qa<cr>
+" highlight off
+nnoremap <silent> <leader><space> :noh<cr>
+" explore
+nnoremap <silent> <leader>e :Ex<cr>
+" tabs
+nnoremap <silent> <leader>t :tabnew<cr>
+nnoremap <silent> <leader>T :tabclose<cr>
+" splits
+nnoremap <silent> <leader>h <c-w>h
+nnoremap <silent> <leader>j <c-w>j
+nnoremap <silent> <leader>k <c-w>k
+nnoremap <silent> <leader>l <c-w>l
+nnoremap <silent> <leader>c <c-w>c
+nnoremap <silent> <leader>s <c-w>s<c-w>j
+nnoremap <silent> <leader>v <c-w>v<c-w>l
+" hjkl only
+nnoremap <silent> <up> <nop>
+nnoremap <silent> <down> <nop>
+nnoremap <silent> <left> <nop>
+nnoremap <silent> <right> <nop>
+inoremap <silent> <up> <nop>
+inoremap <silent> <down> <nop>
+inoremap <silent> <left> <nop>
+inoremap <silent> <right> <nop>
+" clipboard
+nnoremap <silent> <leader>y "*y
+nnoremap <silent> <leader>p "*p
+nnoremap <silent> <leader>P "*P
+" fzf - see plugin/search.vim for :RG
+nnoremap <silent> <leader>f :GFiles<cr>
+nnoremap <silent> <leader><leader>f :RG<cr>
+nnoremap <silent> <leader>F :Files<cr>
 
-set.ignorecase = true
-set.smartcase = true
-
-set.completeopt = { 'menuone', 'noinsert', 'noselect' }
-set.shortmess:append({ c = true })
-
--- mappings
--- see other modules for specific mappings
-vim.g.mapleader = ','
-local set_map = vim.api.nvim_set_keymap
-local map_opts = { noremap = true, silent = true }
-
--- esc key
-set_map('i', 'jk', '<esc>', map_opts)
-set_map('c', 'jk', '<esc>', map_opts)
--- write/quit
-set_map('n', '<leader>w', ':w<cr>', map_opts)
-set_map('n', '<leader>q', ':q<cr>', map_opts)
-set_map('n', '<leader><leader>w', ':x<cr>', map_opts)
-set_map('n', '<leader><leader>q', ':qa<cr>', map_opts)
--- highlight off
-set_map('n', '<leader><space>', ':noh<cr>', map_opts)
--- explore
-set_map('n', '<leader>e', ':Ex<cr>', map_opts)
--- tabs
-set_map('n', '<leader>t', ':tabnew<cr>', map_opts)
-set_map('n', '<leader>T', ':tabclose<cr>', map_opts)
--- splits
-set_map('n', '<leader>h', '<c-w>h', map_opts)
-set_map('n', '<leader>j', '<c-w>j', map_opts)
-set_map('n', '<leader>k', '<c-w>k', map_opts)
-set_map('n', '<leader>l', '<c-w>l', map_opts)
-set_map('n', '<leader>c', '<c-w>c', map_opts)
-set_map('n', '<leader>s', '<c-w>s<c-w>j', map_opts)
-set_map('n', '<leader>v', '<c-w>v<c-w>l', map_opts)
--- hjkl only
-set_map('n', '<up>', '<nop>', map_opts)
-set_map('n', '<down>', '<nop>', map_opts)
-set_map('n', '<left>', '<nop>', map_opts)
-set_map('n', '<right>', '<nop>', map_opts)
-set_map('i', '<up>', '<nop>', map_opts)
-set_map('i', '<down>', '<nop>', map_opts)
-set_map('i', '<left>', '<nop>', map_opts)
-set_map('i', '<right>', '<nop>', map_opts)
--- clipboard
-set_map('n', '<leader>y', '"*y', map_opts)
-set_map('n', '<leader>p', '"*p', map_opts)
-set_map('n', '<leader>P', '"*P', map_opts)
--- fzf
-set_map('n', '<leader>f', ':GFiles<cr>', map_opts)
-set_map('n', '<leader><leader>f', ':RG<cr>', map_opts) -- see search.vim for :RG definition
-set_map('n', '<leader>F', ':Files<cr>', map_opts)
-
--- netrw
-vim.g.netrw_banner = 0 -- hide top part
-vim.g.netrw_altv = 1 -- split ltr
-vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl' -- line numbers
-vim.g.netrw_list_hide = '^\\./$,^\\.\\./$' -- hide . and ..
-vim.g.netrw_hide = 1 -- enable hide
-
-EOF
+let g:netrw_banner=0
+let g:netrw_altv=1 " split ltr
+let g:netrw_bufsettings="noma nomod nu nowrap ro nobl" " line numbers
+let g:netrw_list_hide="^\\./$,^\\.\\./$" " hide . and ..
+let g:netrw_hide=1
