@@ -14,6 +14,8 @@ let g:mapleader=','
 " esc key
 inoremap <silent> jk <esc>
 cnoremap <silent> jk <esc>
+" command
+nnoremap <space> :
 " write/quit
 nnoremap <silent> <leader>w :w<cr>
 nnoremap <silent> <leader>q :q<cr>
