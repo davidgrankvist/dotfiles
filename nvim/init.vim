@@ -45,6 +45,10 @@ inoremap <silent> <up> <nop>
 inoremap <silent> <down> <nop>
 inoremap <silent> <left> <nop>
 inoremap <silent> <right> <nop>
+xnoremap <silent> <up> <nop>
+xnoremap <silent> <down> <nop>
+xnoremap <silent> <left> <nop>
+xnoremap <silent> <right> <nop>
 " clipboard
 nnoremap <silent> <leader>y "*y
 nnoremap <silent> <leader>p "*p
