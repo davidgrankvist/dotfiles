@@ -14,9 +14,10 @@ set shortmess+=c
 
 let g:mapleader=','
 
-" esc key
+" esc mode
 inoremap <silent> jk <esc>
 cnoremap <silent> jk <esc>
+tnoremap jk <c-\><c-n>
 " command
 nnoremap <space> :
 " write/quit
