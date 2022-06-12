@@ -33,9 +33,17 @@ nnoremap <silent> <leader>h <c-w>h
 nnoremap <silent> <leader>j <c-w>j
 nnoremap <silent> <leader>k <c-w>k
 nnoremap <silent> <leader>l <c-w>l
-nnoremap <silent> <leader>c <c-w>c
 nnoremap <silent> <leader>s <c-w>s<c-w>j
 nnoremap <silent> <leader>v <c-w>v<c-w>l
+" brackets
+inoremap <silent> jb ()<esc>i
+inoremap <silent> jn []<esc>i
+inoremap <silent> jm {}<esc>i
+" blank line above/below
+nnoremap <silent> <leader>o o<esc>k
+nnoremap <silent> <leader>O O<esc>j
+" execute macro
+nnoremap <silent> <leader>c @c
 " hjkl only
 nnoremap <silent> <up> <nop>
 nnoremap <silent> <down> <nop>
