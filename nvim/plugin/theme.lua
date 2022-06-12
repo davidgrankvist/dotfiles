@@ -1,3 +1,4 @@
+-- https://github.com/projekt0n/github-nvim-theme
 local util = require('github-theme.util')
 require('github-theme').setup({
     theme_style = 'dark',
@@ -9,7 +10,7 @@ require('github-theme').setup({
 
     overrides = function(c)
         return {
-            -- increased contrast for e.g. lsp hover
+            -- increased contrast for lsp hover
             NormalFloat = { fg = c.fg, bg = '#141414' },
             -- make horizontal splits easier to see
             StatusLineNC = { fg = util.darken(c.fg, 0.9), bg = util.lighten(c.bg, 0.9) },
