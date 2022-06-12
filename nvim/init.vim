@@ -41,7 +41,17 @@ nnoremap <silent> <leader>v <c-w>v<c-w>l
 " brackets
 inoremap <silent> jb ()<esc>i
 inoremap <silent> jn []<esc>i
-inoremap <silent> jm {}<esc>i
+inoremap <silent> jm {<enter>}<esc>O
+inoremap <silent> jM {}<esc>i
+nnoremap <silent> cib ci(
+nnoremap <silent> cin ci[
+nnoremap <silent> cim ci{
+nnoremap <silent> dib di(
+nnoremap <silent> din di[
+nnoremap <silent> dim di{
+nnoremap <silent> yib yi(
+nnoremap <silent> yin yi[
+nnoremap <silent> yim yi{
 " blank line above/below
 nnoremap <silent> <leader>o o<esc>k
 nnoremap <silent> <leader>O O<esc>j
