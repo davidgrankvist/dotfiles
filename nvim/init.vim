@@ -1,5 +1,8 @@
 runtime plugins.vim
 
+command Govim :tabnew $HOME/.config/nvim/init.vim | :lcd %:h
+command Sovim :so $HOME/.config/nvim/init.vim
+
 set expandtab
 set shiftwidth=4
 set number
