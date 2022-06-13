@@ -12,6 +12,7 @@ set smartcase
 set completeopt="menuone,noinsert,noselect"
 set shortmess+=c
 set smartindent
+set nrformats+=alpha
 
 let g:mapleader=','
 
