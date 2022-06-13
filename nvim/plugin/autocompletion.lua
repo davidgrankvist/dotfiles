@@ -29,6 +29,18 @@ mapping = {
       "i",
       "s"
     }),
+  ['<S-Tab>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      -- elseif vim.fn["vsnip#available"](1) then
+      --   vim.fn.feedkeys(t('<Plug>(vsnip-expand-or-jump)', ''))
+      else
+        fallback()
+      end
+    end, {
+      "i",
+      "s"
+    }),
 },
 sources = cmp.config.sources({
   { name = 'nvim_lsp' },
