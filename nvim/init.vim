@@ -22,6 +22,7 @@ cnoremap <silent> jk <esc>
 tnoremap jk <c-\><c-n>
 " command
 nnoremap <space> :
+xnoremap <space> :
 " write/quit
 nnoremap <silent> <leader>w :w<cr>
 nnoremap <silent> <leader>q :q<cr>
