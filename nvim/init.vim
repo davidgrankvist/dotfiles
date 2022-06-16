@@ -50,8 +50,6 @@ inoremap <silent> jM {}<esc>i
 " blank line above/below
 nnoremap <silent> <leader>o o<esc>k
 nnoremap <silent> <leader>O O<esc>j
-" execute macro
-nnoremap <silent> <leader>c @c
 " hjkl only
 nnoremap <silent> <up> <nop>
 nnoremap <silent> <down> <nop>
