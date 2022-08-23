@@ -17,5 +17,7 @@ call plug#begin()
     Plug 'hrsh7th/vim-vsnip'
     " color theme
     Plug 'projekt0n/github-nvim-theme'
+    " Git
+    Plug 'tpope/vim-fugitive'
 call plug#end()
 
