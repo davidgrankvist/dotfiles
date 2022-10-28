@@ -1,6 +1,6 @@
 runtime plugins.vim
 
-command Godot :tabnew $HOME/.config | :lcd %:h
+command Godot :tabnew $HOME/.config | :lcd %
 command Govim :tabnew $MYVIMRC | :lcd %:h
 command Sovim :so $MYVIMRC
 
