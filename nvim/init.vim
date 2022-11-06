@@ -1,4 +1,9 @@
-runtime plugins.vim
+" check for vscode-neovim https://github.com/vscode-neovim/vscode-neovim
+if exists('g:vscode')
+    runtime vscode.vim
+else
+    runtime plugins.vim
+endif
 
 command Godot :tabnew $HOME/.config | :lcd %
 command Govim :tabnew $MYVIMRC | :lcd %:h
