@@ -54,9 +54,6 @@ inoremap <silent> jB (<enter>)<esc>O
 inoremap <silent> jn []<esc>i
 inoremap <silent> jm {<enter>}<esc>O
 inoremap <silent> jM {}<esc>i
-" blank line above/below
-nnoremap <silent> <leader>o o<esc>k
-nnoremap <silent> <leader>O O<esc>j
 " hjkl only
 nnoremap <silent> <up> <nop>
 nnoremap <silent> <down> <nop>
@@ -70,10 +67,6 @@ xnoremap <silent> <up> <nop>
 xnoremap <silent> <down> <nop>
 xnoremap <silent> <left> <nop>
 xnoremap <silent> <right> <nop>
-" clipboard
-nnoremap <silent> <leader>y "*y
-nnoremap <silent> <leader>p "*p
-nnoremap <silent> <leader>P "*P
 " fzf - see plugin/search.vim for :RG
 nnoremap <silent> <leader>f :GFiles<cr>
 nnoremap <silent> <leader><leader>f :RG<cr>
