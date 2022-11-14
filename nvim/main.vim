@@ -44,11 +44,10 @@ nnoremap <silent> <leader>l <c-w>l
 nnoremap <silent> <leader>s <c-w>s<c-w>j
 nnoremap <silent> <leader>v <c-w>v<c-w>l
 " brackets
-inoremap <silent> jb ()<esc>i
-inoremap <silent> jB (<enter>)<esc>O
-inoremap <silent> jn []<esc>i
-inoremap <silent> jm {<enter>}<esc>O
-inoremap <silent> jM {}<esc>i
+inoremap <silent> ( ()<esc>i
+inoremap <silent> [ []<esc>i
+inoremap <silent> {<space> {<space><space>}<esc>hi
+inoremap <silent> {<enter> {<enter>}<esc>O
 " hjkl only
 nnoremap <silent> <up> <nop>
 nnoremap <silent> <down> <nop>
