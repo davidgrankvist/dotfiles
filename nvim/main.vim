@@ -65,6 +65,9 @@ xnoremap <silent> <right> <nop>
 nnoremap <silent> <leader>f :GFiles<cr>
 nnoremap <silent> <leader><leader>f :RG<cr>
 nnoremap <silent> <leader>F :Files<cr>
+" quickfix list
+nnoremap <silent> <c-j> :cnext<cr>
+nnoremap <silent> <c-k> :cprev<cr>
 
 let g:netrw_banner=0
 let g:netrw_altv=1 " split ltr
