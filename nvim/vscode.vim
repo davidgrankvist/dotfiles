@@ -29,15 +29,11 @@ nmap <silent> <leader><leader>q :qa<cr>
 " highlight off
 nmap <silent> <leader><space> :noh<cr>
 " explore
-nmap <silent> <leader>e :Ex<cr>
+nmap <silent>  <leader>e <cmd>call VSCodeNotify('workbench.view.explorer')<cr>
 " tabs
 nmap <silent> <leader>t :tabnew<cr>
 nmap <silent> <leader>T :tabclose<cr>
 " splits
-nmap <silent> <leader>h <c-w>h
-nmap <silent> <leader>j <c-w>j
-nmap <silent> <leader>k <c-w>k
-nmap <silent> <leader>l <c-w>l
 nmap <silent> <leader>s <c-w>s<c-w>j
 nmap <silent> <leader>v <c-w>v<c-w>l
 " hjkl only
@@ -53,5 +49,14 @@ xmap <silent> <up> <nop>
 xmap <silent> <down> <nop>
 xmap <silent> <left> <nop>
 xmap <silent> <right> <nop>
-" fuzzy find (:Ex triggers VSCode Ctrl+P)
-nmap <silent> <leader>f :Ex<cr>
+" file search
+nmap <silent> <leader>f <cmd>call VSCodeNotify('workbench.action.quickOpen')<cr>
+nmap <silent> <leader><leader>f <cmd>call VSCodeNotify('workbench.action.findInFiles')<cr>
+" close others
+nmap <silent> <c-w>o <cmd>call VSCodeNotify('workbench.action.closeOtherEditors')<cr>
+" LSP
+nmap <silent> <c-h> <cmd>call VSCodeNotify('editor.action.marker.prev')<cr>
+nmap <silent> <c-l> <cmd>call VSCodeNotify('editor.action.marker.next')<cr>
+nmap <silent> gr <cmd>call VSCodeNotify('editor.action.goToReferences')<cr>
+nmap <silent> <leader>ca <cmd>call VSCodeNotify('editor.action.quickFix')<cr>
+nmap <silent> <leader>rn <cmd>call VSCodeNotify('editor.action.rename')<cr>
