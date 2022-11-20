@@ -37,10 +37,7 @@ nnoremap <silent> <leader>e :Ex<cr>
 nnoremap <silent> <leader>t :tabnew<cr>
 nnoremap <silent> <leader>T :tabclose<cr>
 " splits
-nnoremap <silent> <leader>h <c-w>h
-nnoremap <silent> <leader>j <c-w>j
-nnoremap <silent> <leader>k <c-w>k
-nnoremap <silent> <leader>l <c-w>l
+nnoremap <silent> <c-s> <c-w><c-w>
 nnoremap <silent> <leader>s <c-w>s<c-w>j
 nnoremap <silent> <leader>v <c-w>v<c-w>l
 " brackets
@@ -65,9 +62,11 @@ xnoremap <silent> <right> <nop>
 nnoremap <silent> <leader>f :GFiles<cr>
 nnoremap <silent> <leader><leader>f :RG<cr>
 nnoremap <silent> <leader>F :Files<cr>
-" quickfix list
-nnoremap <silent> <c-j> :cnext<cr>
-nnoremap <silent> <c-k> :cprev<cr>
+" quickfix / location lists
+nnoremap <silent> <c-j> :cnext<cr>zz
+nnoremap <silent> <c-k> :cprev<cr>zz
+nnoremap <silent> <leader>l :lnext<cr>zz
+nnoremap <silent> <leader>h :lprev<cr>zz
 
 let g:netrw_banner=0
 let g:netrw_altv=1 " split ltr
