@@ -50,6 +50,8 @@
     sta = stash apply
     # clean
     cl = clean
+    # blame
+    bl = blame
     # difftool
     dt = difftool
     hdt = difftool HEAD~1 HEAD
