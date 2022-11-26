@@ -1,5 +1,5 @@
 call plug#begin()
-    " LSP client config
+    " lsp client config
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/lsp_extensions.nvim'
     " null-ls
@@ -20,7 +20,11 @@ call plug#begin()
     Plug 'hrsh7th/vim-vsnip'
     " color theme
     Plug 'projekt0n/github-nvim-theme'
-    " Git
+    " git
     Plug 'tpope/vim-fugitive'
+    " comment out code
+    Plug 'tpope/vim-commentary'
+    " surround with quotes, brackets, tags, etc.
+    Plug 'tpope/vim-surround'
 call plug#end()
 
