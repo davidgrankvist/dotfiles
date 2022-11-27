@@ -1,11 +1,6 @@
 #!/bin/sh
-# Add symlinks to $HOME if the XDG Base Directory standard isn't used
-lnk () {
-    ln -s $PWD/$1 $HOME/
-}
-lnk .editorconfig
-lnk .tmux.conf
-lnk .bash_aliases
+# Add symlinks to $HOME
+stow -R */ -t ~/ 2>/dev/null
 
 # Add include section to .gitconfig
 if [ -z "$(grep include $HOME/.gitconfig)" ]; then
