@@ -62,11 +62,14 @@ xnoremap <silent> <right> <nop>
 nnoremap <silent> <leader>f :GFiles<cr>
 nnoremap <silent> <leader><leader>f :RG<cr>
 nnoremap <silent> <leader>F :Files<cr>
-" quickfix / location lists
+nnoremap <silent> <leader>b :Buffers<cr>
+" cycle lists and buffers
 nnoremap <silent> <c-j> :cnext<cr>zz
 nnoremap <silent> <c-k> :cprev<cr>zz
 nnoremap <silent> <leader>l :lnext<cr>zz
 nnoremap <silent> <leader>h :lprev<cr>zz
+nnoremap <silent> <S-Right> :bnext<cr>
+nnoremap <silent> <S-Left> :bprev<cr>
 
 let g:netrw_banner=0
 let g:netrw_altv=1 " split ltr
