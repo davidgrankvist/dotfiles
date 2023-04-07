@@ -1,0 +1,8 @@
+window:
+  startup_mode: Maximized
+  # Make `Option` key behave as `Alt` (macOS only)
+  option_as_alt: OnlyRight
+
+key_bindings:
+# alternate file in vim with Ctrl+6
+  - { key: Key6,        mods: Control, chars: "\x1e"                     }
