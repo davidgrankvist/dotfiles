@@ -4,5 +4,11 @@ window:
   option_as_alt: OnlyRight
 
 key_bindings:
-# alternate file in vim with Ctrl+6
-  - { key: Key6,        mods: Control, chars: "\x1e"                     }
+  # vim - alternative file with Ctrl+6
+  - { key: Key6, mods: Control, chars: "\x1e" }
+  # vim - enter Alt characters without exiting insert mode
+  - { key: LBracket, mods: Alt, chars: "[" }
+  - { key: RBracket, mods: Alt, chars: "]" }
+  - { key: LBracket, mods: Alt|Shift, chars: "{" }
+  - { key: RBracket, mods: Alt|Shift, chars: "}" }
+  - { key: Backslash, mods: Alt, chars: "|" }
