@@ -7,6 +7,8 @@ key_bindings:
   # vim - alternative file with Ctrl+6
   - { key: Key6, mods: Control, chars: "\x1e" }
   # vim - enter Alt characters without exiting insert mode
+  - { key: Key2, mods: Alt, chars: "@" }
+  - { key: Key4, mods: Alt, chars: "$" }
   - { key: LBracket, mods: Alt, chars: "[" }
   - { key: RBracket, mods: Alt, chars: "]" }
   - { key: LBracket, mods: Alt|Shift, chars: "{" }
