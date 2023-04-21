@@ -14,3 +14,4 @@ key_bindings:
   - { key: LBracket, mods: Alt|Shift, chars: "{" }
   - { key: RBracket, mods: Alt|Shift, chars: "}" }
   - { key: Backslash, mods: Alt, chars: "|" }
+  - { key: Backslash, mods: Alt|Shift, chars: "\\" }
