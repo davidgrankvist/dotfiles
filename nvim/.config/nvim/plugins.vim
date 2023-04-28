@@ -1,9 +1,10 @@
 call plug#begin()
+    " utils
+    Plug 'nvim-lua/plenary.nvim'
     " lsp client config
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/lsp_extensions.nvim'
     " null-ls
-    Plug 'nvim-lua/plenary.nvim'
     Plug 'jose-elias-alvarez/null-ls.nvim'
     " fuzzy find
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -18,8 +19,10 @@ call plug#begin()
     Plug 'hrsh7th/nvim-cmp'
     Plug 'hrsh7th/cmp-vsnip'
     Plug 'hrsh7th/vim-vsnip'
+    " language parsing for smart syntax highlighting
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     " color theme
-    Plug 'projekt0n/github-nvim-theme'
+    Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
     " git
     Plug 'tpope/vim-fugitive'
     " comment out code
