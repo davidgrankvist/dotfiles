@@ -14,6 +14,7 @@ set completeopt="menuone,noinsert,noselect"
 set shortmess+=c
 set smartindent
 set nrformats+=alpha
+set guicursor=
 
 let g:mapleader=','
 
