@@ -29,5 +29,7 @@ call plug#begin()
     Plug 'tpope/vim-commentary'
     " surround with quotes, brackets, tags, etc.
     Plug 'tpope/vim-surround'
+    " zen mode
+    Plug 'folke/zen-mode.nvim'
 call plug#end()
 
