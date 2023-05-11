@@ -71,3 +71,5 @@
     keepBackup = false
 [mergetool "vimdiff"]
     path = nvim
+[push]
+    autoSetupRemote = true
