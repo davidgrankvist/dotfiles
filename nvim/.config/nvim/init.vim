@@ -56,6 +56,14 @@ xnoremap <silent> <up> <nop>
 xnoremap <silent> <down> <nop>
 xnoremap <silent> <left> <nop>
 xnoremap <silent> <right> <nop>
+" delete without loosing current yank
+nnoremap <silent> <leader>d "_d
+" replace selection with current yank
+xnoremap <silent> <leader>p "_dP
+" clipboard yank/paste
+nnoremap <silent> <leader>y "*y
+vnoremap <silent> <leader>y "*y
+nnoremap <silent> <leader>p "*p
 " fzf - see plugin/search.vim for :RG
 nnoremap <silent> <leader>f :GFiles<cr>
 nnoremap <silent> <leader><leader>f :RG<cr>
@@ -70,7 +78,6 @@ nnoremap <silent> <S-Right> :bnext<cr>
 nnoremap <silent> <S-Left> :bprev<cr>
 " zen mode
 nnoremap <silent> <leader>z :ZenMode<cr>
-
 
 let g:netrw_banner=0
 let g:netrw_altv=1 " split ltr
