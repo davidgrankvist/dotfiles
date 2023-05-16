@@ -14,7 +14,7 @@ set completeopt="menuone,noinsert,noselect"
 set shortmess+=c
 set smartindent
 set nrformats+=alpha
-set guicursor=
+set guicursor=a:Cursor
 
 let g:mapleader=','
 
@@ -84,4 +84,3 @@ let g:netrw_altv=1 " split ltr
 let g:netrw_bufsettings="noma nomod nu nowrap ro nobl" " line numbers
 let g:netrw_list_hide="^\\./$,^\\.\\./$" " hide . and ..
 let g:netrw_hide=1
-

@@ -21,8 +21,6 @@ call plug#begin()
     Plug 'hrsh7th/vim-vsnip'
     " language parsing for smart syntax highlighting
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-    " color theme
-    Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
     " git
     Plug 'tpope/vim-fugitive'
     " comment out code

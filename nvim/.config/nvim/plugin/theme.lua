@@ -5,7 +5,7 @@ require'nvim-treesitter.configs'.setup {
   additional_vim_regex_highlighting = false,
 }
 
-vim.g.gruvbox_baby_function_style = "NONE"
-vim.g.gruvbox_baby_comment_style = "NONE"
-vim.g.gruvbox_baby_keyword_style = "NONE"
-vim.cmd('colorscheme gruvbox-baby')
+vim.cmd('set termguicolors')
+vim.cmd('colorscheme najs')
+-- tree-sitter - md titles
+vim.cmd('hi @text.title guifg=#d9ff52')
