@@ -4,3 +4,4 @@ alias v="nvim ."
 alias g=git
 alias t="tmux a"
 alias bat=batcat
+alias pn="pnpm"
