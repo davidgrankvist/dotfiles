@@ -7,5 +7,3 @@ require'nvim-treesitter.configs'.setup {
 
 vim.cmd('set termguicolors')
 vim.cmd('colorscheme najs')
--- tree-sitter - md titles
-vim.cmd('hi @text.title guifg=#d9ff52')

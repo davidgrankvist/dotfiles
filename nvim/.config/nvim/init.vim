@@ -15,6 +15,8 @@ set shortmess+=c
 set smartindent
 set nrformats+=alpha
 set guicursor=a:Cursor
+set cursorline
+set fillchars=stlnc:-
 
 let g:mapleader=','
 
