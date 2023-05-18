@@ -57,9 +57,9 @@
     hdt = difftool HEAD~1 HEAD
     # mergetool
     mt = mergetool
-    # util namespace to avoid accidental auto complete
     # remove local branches by pattern
-    util-brclean = "!git branch --list \"$1\" | xargs git branch -D #"
+    clbr = "!git branch --list \"$1\" | xargs git branch -D 2>/dev/null #"
+    clabr = "!git branch | xargs git branch -D 2>/dev/null #"
 # nvim diff mode as diff and merge tool
 [diff]
     tool = vimdiff
