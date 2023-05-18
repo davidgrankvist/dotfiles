@@ -1,0 +1,5 @@
+# source this file in ~/.bashrc or ~/.zshrc
+
+. ~/.bash_aliases
+
+export PATH=$PATH:$HOME/.local/bin/scripts
