@@ -7,7 +7,7 @@ alias pn="pnpm"
 
 # see bin/.local/bin/scripts
 alias goproj='cd $(findproj | fzf)'
-alias gohere='cd $(finddir | fzf)'
+alias godir='cd $(finddir | fzf)'
 
 alias t='tmux new-session -As $(basename $PWD)'
 alias td='tmux detach'

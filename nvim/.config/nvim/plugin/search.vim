@@ -1,3 +1,6 @@
+" fzf.vim custom commands
+" see https://github.com/junegunn/fzf.vim
+
 " Custom rg:
 " - don't match on file names
 " - include hidden files, but not .git
@@ -12,3 +15,15 @@ function! RipgrepFzf(query, fullscreen)
 endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+
+" fzf.vim equivalents of goproj and godir.
+"
+" see:
+" - bash/.bash_aliases
+" - bin/.local/bin/scripts
+"
+" :h fzf#wrap
+command! -bang -complete=dir -nargs=? Goproj
+            \ call fzf#run(fzf#wrap({'source': 'findproj', 'dir': <q-args>}, <bang>0))
+command! -bang -complete=dir -nargs=? Godir
+            \ call fzf#run(fzf#wrap({'source': 'finddir', 'dir': <q-args>}, <bang>0))
