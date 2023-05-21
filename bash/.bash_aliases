@@ -6,9 +6,9 @@ alias bat=batcat
 alias pn="pnpm"
 
 # see bin/.local/bin/scripts
-alias goproj='cd $(findproj | fzf)'
-alias godir='cd $(finddir | fzf)'
+alias goproj='goproj_path="$(findproj | fzf)" && cd "${goproj_path}"'
+alias godir='godir_path="$(finddir | fzf)" && cd "${godir_path}"'
 
-alias t='tmux new-session -As $(basename $PWD)'
+alias t='tmux new-session -As "$(basename $PWD)"'
 alias td='tmux detach'
 alias tproj='goproj && t'
