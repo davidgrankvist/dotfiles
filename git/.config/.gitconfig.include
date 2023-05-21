@@ -75,3 +75,5 @@
     path = nvim
 [push]
     autoSetupRemote = true
+[init]
+    defaultBranch = main
