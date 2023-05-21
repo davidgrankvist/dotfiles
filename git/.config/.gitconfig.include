@@ -10,6 +10,8 @@
     # branch
     br = branch
     brv = branch -vv
+    bra = branch -a
+    brva = branch -vva
     # add
     a = add
     aa = add .
@@ -60,9 +62,20 @@
     hdt = difftool HEAD~1 HEAD
     # mergetool
     mt = mergetool
+    # init
+    i = init
+    ib = init --bare
+    # clone
+    clo = clone
+    clob = clone --bare
+    # worktree
+    wt = worktree
+    wta = worktree add
+    wtr = worktree remove
+    wtl = worktree list
     # remove local branches by pattern
-    clbr = "!git branch --list \"$1\" | xargs git branch -D 2>/dev/null #"
-    clabr = "!git branch | xargs git branch -D 2>/dev/null #"
+    brcl = "!git branch --list \"$1\" | xargs git branch -D 2>/dev/null #"
+    bracl = "!git branch | xargs git branch -D 2>/dev/null #"
 # nvim diff mode as diff and merge tool
 [diff]
     tool = vimdiff
