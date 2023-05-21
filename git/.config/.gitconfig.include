@@ -51,7 +51,8 @@
     st = stash
     sta = stash apply
     # clean
-    cl = clean
+    cl = clean -fd
+    cln = clean -fdn
     # blame
     bl = blame
     # difftool
