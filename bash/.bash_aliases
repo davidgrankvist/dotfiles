@@ -12,6 +12,7 @@ alias godir='godir_path="$(finddir | fzf)" && cd "${godir_path}"'
 alias t='tmux new-session -As "$(basename $PWD)"'
 alias td='tmux detach'
 alias tproj='goproj && t'
+alias ts='tmux switch-client -t $(tmux ls | sed "s/:.*$//" | fzf)'
 
 mkcd () {
     mkdir "$1" && cd "$1"
