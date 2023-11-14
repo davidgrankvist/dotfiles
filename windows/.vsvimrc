@@ -1,0 +1,30 @@
+" Visual Studio VsVim plugin
+" see https://github.com/VsVim/VsVim
+
+let g:mapleader=','
+
+" enable jumps between files
+nmap <C-O> :vsc View.NavigateBackward<CR>
+nmap <C-I> :vsc View.NavigateForward<CR>
+
+" esc mode
+inoremap <silent> jk <esc>
+cnoremap <silent> jk <esc>
+" command
+nnoremap <space> :
+xnoremap <space> :
+" write/quit
+nnoremap <silent> <leader>w :w<cr>
+nnoremap <silent> <leader>q :q<cr>
+nnoremap <silent> <leader><leader>w :x<cr>
+nnoremap <silent> <leader><leader>q :qa<cr>
+" highlight off
+nnoremap <silent> <leader><space> :noh<cr>
+" delete without loosing current yank
+nnoremap <silent> <leader>d "_d
+" replace selection with current yank
+xnoremap <silent> <leader>p "_dP
+" clipboard yank/paste
+nnoremap <silent> <leader>y "*y
+vnoremap <silent> <leader>y "*y
+nnoremap <silent> <leader>p "*p

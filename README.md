@@ -5,6 +5,8 @@ Configuration files for `$HOME`.
 These dotfiles are managed with symlinks by using [stow](https://www.gnu.org/software/stow/).
 
 ## Usage
+
+### Linux / Mac
 First you need to install `stow`. The easiest way is by using a package manager like `apt` or `brew`.
 
 Then clone the repository and run the setup script.
@@ -23,3 +25,7 @@ To remove them, run
 ```bash
 ./clean.sh
 ```
+
+### Windows
+
+Work in progress. See the files under windows/.
