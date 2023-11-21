@@ -1,0 +1,87 @@
+{
+    // general
+    "editor.lineNumbers": "relative",
+    "workbench.startupEditor": "newUntitledFile",
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    // hide distracting things
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "editor.guides.indentation": false,
+    "editor.occurrencesHighlight": false,
+    "editor.matchBrackets": "never",
+    "editor.selectionHighlight": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.hideCursorInOverviewRuler": true,
+    "scm.diffDecorations": "none",
+    "workbench.layoutControl.enabled": false,
+    // vim
+    "vim.leader": ",",
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-k>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-l>": false,
+        "<C-p>": false
+    },
+    "vim.normalModeKeyBindings": [
+        // command
+        {
+            "before": ["<space>"],
+            "after": [":"]
+        },
+        // save / close
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"],
+        },
+        {
+            "before": ["<leader>", "q"],
+            "commands": [":q"],
+            "silent": true
+        },
+        // fuzzy find
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        // splits
+        {
+            "before": ["<leader>", "v"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["workbench.action.splitEditorDown"]
+        },
+        // marks
+        {
+            "before": ["<leader>", "m"],
+            "after": ["'"]
+        },
+        // lsp
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        {
+            "before": ["<leader>", "D"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "k"],
+          "after": ["<Esc>"]
+        }
+    ],
+}

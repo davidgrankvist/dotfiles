@@ -28,4 +28,4 @@ To remove them, run
 
 ### Windows
 
-Work in progress. See the files under windows/.
+See the files under windows/. This is just a backup for now with no setup scripts.

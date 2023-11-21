@@ -1,0 +1,14 @@
+[
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.marker.prevInFiles"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "editor.action.marker.nextInFiles"
+    }
+]
