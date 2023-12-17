@@ -1,6 +1,11 @@
 " Visual Studio VsVim plugin
 " see https://github.com/VsVim/VsVim
 
+set number
+set relativenumber
+set ignorecase
+set smartcase
+
 let g:mapleader=','
 
 " enable jumps between files
