@@ -40,7 +40,7 @@ nnoremap <silent> <c-s> <c-w><c-w>
 nnoremap <silent> <leader>s <c-w>s<c-w>j
 nnoremap <silent> <leader>v <c-w>v<c-w>l
 " brackets
-inoremap <silent> {<enter> {<enter>}<esc>O
+inoremap <silent> {<enter> {<enter>}<esc>O<bs><tab>
 " hjkl only
 nnoremap <silent> <up> <nop>
 nnoremap <silent> <down> <nop>
