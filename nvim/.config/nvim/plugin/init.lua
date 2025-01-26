@@ -3,7 +3,6 @@ if vim.fn.has('win32') == 1 then
 else
     require('autocompletion')
     require('lsp')
-    require('null-ls')
     require('theme')
 end
 
