@@ -14,6 +14,7 @@ set fillchars=stlnc:-
 language en
 
 let g:mapleader=','
+let g:loaded_matchparen = 0
 
 " esc mode
 inoremap <silent> jk <esc>

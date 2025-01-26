@@ -1,4 +1,6 @@
-if vim.fn.has('win32') == 0 then
+if vim.fn.has('win32') == 1 then
+    require('theme')
+else
     require('autocompletion')
     require('lsp')
     require('null-ls')
