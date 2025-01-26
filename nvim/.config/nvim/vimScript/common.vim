@@ -11,7 +11,6 @@ set nrformats+=alpha
 set guicursor=a:Cursor
 set cursorline
 set fillchars=stlnc:-
-language en
 
 let g:mapleader=','
 let g:loaded_matchparen = 0
