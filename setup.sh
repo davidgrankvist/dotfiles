@@ -1,6 +1,10 @@
 #!/bin/sh
+
+# Skip windows stuff
+IGNORE_LIST=$(find windows/ -mindepth 1 -maxdepth 1 | xargs -I {} echo -n " --ignore {}" | sed s/windows\\///g)
+
 # Add symlinks to $HOME
-stow -R */ -t ~/ 2>/dev/null
+stow -R */ -t ~/ $IGNORE_LIST 2>/dev/null
 
 # Add include section to .gitconfig
 if [ -z "$(grep include $HOME/.gitconfig)" ]; then
