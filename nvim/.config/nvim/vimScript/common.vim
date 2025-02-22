@@ -11,6 +11,8 @@ set nrformats+=alpha
 set guicursor=a:Cursor
 set cursorline
 set fillchars=stlnc:-
+" load project specific vim configuration
+set exrc
 
 let g:mapleader=','
 let g:loaded_matchparen = 0
