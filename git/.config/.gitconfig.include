@@ -73,6 +73,8 @@
     wta = worktree add
     wtr = worktree remove
     wtl = worktree list
+    # show
+    sh = show
     # remove local branches by pattern
     brcl = "!git branch --list \"$1\" | xargs git branch -D 2>/dev/null #"
     bracl = "!git branch | xargs git branch -D 2>/dev/null #"
