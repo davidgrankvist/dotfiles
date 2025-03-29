@@ -1,5 +1,10 @@
-" fzf.vim custom commands
+" fzf.vim bindings and custom functions
 " see https://github.com/junegunn/fzf.vim
+
+nnoremap <silent> <leader>f :GFiles<cr>
+nnoremap <silent> <leader><leader>f :RG<cr>
+nnoremap <silent> <leader>F :Files<cr>
+nnoremap <silent> <leader>b :Buffers<cr>
 
 " Custom rg:
 " - don't match on file names
@@ -27,3 +32,4 @@ command! -bang -complete=dir -nargs=? Goproj
             \ call fzf#run(fzf#wrap({'source': 'findproj', 'dir': <q-args>}, <bang>0))
 command! -bang -complete=dir -nargs=? Godir
             \ call fzf#run(fzf#wrap({'source': 'finddir', 'dir': <q-args>}, <bang>0))
+

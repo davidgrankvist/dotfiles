@@ -70,7 +70,7 @@ nnoremap <silent> <leader>l :lnext<cr>zz
 nnoremap <silent> <leader>h :lprev<cr>zz
 nnoremap <silent> <S-Right> :bnext<cr>
 nnoremap <silent> <S-Left> :bprev<cr>
-nnoremap <C-B> :make<CR>
+nnoremap <c-b> :make<cr>
 
 let g:netrw_banner=0
 let g:netrw_altv=1 " split ltr
