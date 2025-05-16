@@ -5,20 +5,19 @@
     # checkout
     co = checkout
     cob = checkout -b
-    # fuzzy find branch and checkout
+    # checkout - fuzzy find branch and checkout
     coz = "!git for-each-ref --format='%(refname:short)' refs/heads/ | fzf | xargs git checkout"
     # branch
     br = branch
-    brv = branch -vv
-    bra = branch -a
-    brva = branch -vva
+    # branch - remove local branches by pattern
+    brcl = "!git branch --list \"$1\" | xargs git branch -D 2>/dev/null #"
+    bracl = "!git branch | xargs git branch -D 2>/dev/null #"
     # add
     a = add
     aa = add .
     # commit
     cm = commit
     cma = commit --amend
-    # add and commit
     acm = "!git add . && git commit"
     acma = "!git add . && git commit --amend"
     # status
@@ -54,31 +53,10 @@
     sta = stash apply
     # clean
     cl = clean -fd
-    cln = clean -fdn
     # blame
     bl = blame
-    # difftool
-    dt = difftool
-    hdt = difftool HEAD~1 HEAD
-    # mergetool
-    mt = mergetool
-    # init
-    i = init
-    ib = init --bare
-    # clone
-    clo = clone
-    clob = clone --bare
-    # worktree
-    wt = worktree
-    wta = worktree add
-    wtr = worktree remove
-    wtl = worktree list
     # show
     sh = show
-    # remove local branches by pattern
-    brcl = "!git branch --list \"$1\" | xargs git branch -D 2>/dev/null #"
-    bracl = "!git branch | xargs git branch -D 2>/dev/null #"
-# nvim diff mode as diff and merge tool
 [diff]
     tool = vimdiff
 [difftool "vimdiff"]
