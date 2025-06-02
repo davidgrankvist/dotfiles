@@ -1,4 +1,4 @@
-if vim.fn.has("win32") then
+if vim.fn.has("win32") and not vim.fn.has("wsl") then
     vim.cmd("language en")
     require("common")
     require("dotfileCommands")
