@@ -2,7 +2,6 @@ call plug#begin()
     Plug 'nvim-lua/plenary.nvim'
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/lsp_extensions.nvim'
-    Plug 'jose-elias-alvarez/null-ls.nvim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'editorconfig/editorconfig-vim'
