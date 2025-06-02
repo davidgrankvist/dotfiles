@@ -7,8 +7,8 @@ if vim.fn.has("win32") and not vim.fn.has("wsl") then
 else
     require("common")
     vim.cmd("runtime vimScript/plugins.vim")
-    vim.cmd("runtime vimScript/searchFzf.vim")
     require("dotfileCommands")
+    require("searchTelescope")
     require("autocompletion")
     require("lsp")
     require("theme")

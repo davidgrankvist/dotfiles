@@ -10,5 +10,5 @@ if path:find("dotfiles") then
 end
 
 local keymap = vim.keymap
-keymap.set("n", "<leader>f", ":find<space>")
-keymap.set("n", "<leader><leader>f", ":vimgrep<space>/")
+keymap.set("n", "<leader>ff", ":find<space>")
+keymap.set("n", "<leader>fg", ":vimgrep<space>/")

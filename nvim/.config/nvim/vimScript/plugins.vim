@@ -2,8 +2,7 @@ call plug#begin()
     Plug 'nvim-lua/plenary.nvim'
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/lsp_extensions.nvim'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
     Plug 'editorconfig/editorconfig-vim'
     Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'hrsh7th/cmp-buffer'
