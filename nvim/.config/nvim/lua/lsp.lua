@@ -37,7 +37,7 @@ end
 -- https://github.com/hrsh7th/nvim-cmp#recommended-configuration
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'csharp_ls', 'gopls' }
+local servers = { 'pyright', 'rust_analyzer', 'ts_ls', 'csharp_ls', 'gopls' }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
