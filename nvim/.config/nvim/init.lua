@@ -8,7 +8,7 @@ end
 
 require("common")
 require("dotfileCommands")
-require("config.lazy")
+require("pluginManager.lazy")
 require("searchTelescope")
 require("autocompletion")
 require("lsp")
