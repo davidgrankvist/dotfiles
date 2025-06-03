@@ -1,4 +1,4 @@
-if vim.fn.has("win32") and not vim.fn.has("wsl") then
+if vim.fn.has("win32") == 1 then
     vim.cmd("language en")
     require("common")
     require("dotfileCommands")
@@ -14,6 +14,6 @@ else
     require("theme")
 end
 
-if vim.fn.has("wsl") then
+if vim.fn.has("wsl") == 1 then
     require("wslClipboard")
 end
