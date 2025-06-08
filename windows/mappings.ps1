@@ -69,6 +69,10 @@ function GetMappings() {
         @{
             Source = Resolve("..\nvim\.config\nvim");
             Target = ResolveHome("AppData\Local\nvim")
+        },
+        @{
+            Source = ResolveHome("source\repos\project-launcher\src\project-launcher.ps1");
+            Target = ResolveHome("tools\project-launcher.ps1")
         }
 
     $mappings += $manualMappings
