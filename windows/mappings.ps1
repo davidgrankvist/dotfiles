@@ -1,4 +1,9 @@
-# To update manual mappings, see the GetMappings function
+# This script sets up symlinks where paths under windows_home/
+# are linked to the corresponding path in the home directory.
+# There are also manual mappings for when configuration files
+# are outside of windows_home/
+#
+# See the GetMappings function.
 
 function Resolve([string] $path) {
     return (Resolve-Path $path).Path
@@ -7,6 +12,30 @@ function Resolve([string] $path) {
 function ResolveHome([string] $path) {
     return "$HOME\$path"
 }
+
+$manualMappings =
+    @{
+	Source = Resolve("..\git\.config\.gitconfig.include");
+	Target = ResolveHome(".gitconfig.include")
+    },
+    @{
+	Source = Resolve("..\nvim\.config\nvim");
+	Target = ResolveHome("AppData\Local\nvim")
+    },
+    @{
+	Source = ResolveHome("source\repos\project-launcher\src\project-launcher.ps1");
+	Target = ResolveHome("tools\project-launcher.ps1")
+    },
+    # Symlink individual Emacs files instead of .emacs.d
+    # Emacs stores state files in that directory that could accidentally be cleaned.
+    @{
+	Source = Resolve("..\emacs\.config\emacs\init.el");
+	Target = ResolveHome("AppData\Roaming\.emacs.d\init.el")
+    },
+    @{
+	Source = Resolve("..\emacs\.config\emacs\early-init.el");
+	Target = ResolveHome("AppData\Roaming\.emacs.d\early-init.el")
+    }
 
 function PromptYesNo([string] $question) {
     $answer = Read-Host "$question (y/n)"
@@ -59,21 +88,6 @@ function GetMappings() {
         $entry = @{ Source = $absolutePath; Target = $targetAbsolutePath }
         $mappings += @($entry)
     }
-
-    # manual mappings - pick from outside the windows/ dotfiles
-    $manualMappings = 
-        @{ 
-            Source = Resolve("..\git\.config\.gitconfig.include");
-            Target = ResolveHome(".gitconfig.include")
-        },
-        @{
-            Source = Resolve("..\nvim\.config\nvim");
-            Target = ResolveHome("AppData\Local\nvim")
-        },
-        @{
-            Source = ResolveHome("source\repos\project-launcher\src\project-launcher.ps1");
-            Target = ResolveHome("tools\project-launcher.ps1")
-        }
 
     $mappings += $manualMappings
 
