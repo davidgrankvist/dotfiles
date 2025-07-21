@@ -7,7 +7,10 @@
 
 ;; Theme and font
 (load-theme 'tango-dark)
-(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 75)
+(if (eq system-type 'windows-nt)
+  (set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 75)
+  (set-face-attribute 'default nil :family "DejaVu Sans Mono")
+)
 
 ;; Line and column numbers
 (setq display-line-numbers-type 'relative)
