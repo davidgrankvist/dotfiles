@@ -1,17 +1,12 @@
 # [include] the path to this file in ~/.gitconfig
 [core]
-    editor = nvim
+    editor = vi
 [alias]
     # checkout
     co = checkout
     cob = checkout -b
-    # checkout - fuzzy find branch and checkout
-    coz = "!git for-each-ref --format='%(refname:short)' refs/heads/ | fzf | xargs git checkout"
     # branch
     br = branch
-    # branch - remove local branches by pattern
-    brcl = "!git branch --list \"$1\" | xargs git branch -D 2>/dev/null #"
-    bracl = "!git branch | xargs git branch -D 2>/dev/null #"
     # add
     a = add
     aa = add .
@@ -52,21 +47,11 @@
     st = stash
     sta = stash apply
     # clean
-    cl = clean -fd
+    cl = clean
     # blame
     bl = blame
     # show
     sh = show
-[diff]
-    tool = vimdiff
-[difftool "vimdiff"]
-    path = nvim
-[merge]
-    tool = vimdiff
-[mergetool]
-    keepBackup = false
-[mergetool "vimdiff"]
-    path = nvim
 [push]
     autoSetupRemote = true
 [init]
