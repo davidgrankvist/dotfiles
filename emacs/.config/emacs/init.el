@@ -22,5 +22,6 @@
   ;; Indent = 4 spaces
   (setq c-basic-offset 4)
   (setq indent-tabs-mode nil)
+  (c-set-offset 'case-label '+)
 )
 (add-hook 'c-mode-hook 'my-c-mode-hook)
