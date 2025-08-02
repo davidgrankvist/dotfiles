@@ -4,5 +4,7 @@
 
 # Emacs state files.
 # They end up in the repo as stow symlinks the entire directory.
-emacs/.config/emacs/eshell/
-emacs/.config/emacs/projects
+emacs/.config/emacs/*
+!emacs/.config/emacs/
+!emacs/.config/emacs/init.el
+!emacs/.config/emacs/early-init.el
