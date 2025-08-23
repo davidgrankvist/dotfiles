@@ -8,3 +8,5 @@ emacs/.config/emacs/*
 !emacs/.config/emacs/
 !emacs/.config/emacs/init.el
 !emacs/.config/emacs/early-init.el
+!emacs/.config/emacs/eshell/
+!emacs/.config/emacs/eshell/alias

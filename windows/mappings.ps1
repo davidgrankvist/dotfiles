@@ -35,6 +35,10 @@ $manualMappings =
     @{
 	Source = Resolve("..\emacs\.config\emacs\early-init.el");
 	Target = ResolveHome("AppData\Roaming\.emacs.d\early-init.el")
+    },
+    @{
+	Source = Resolve("..\emacs\.config\emacs\eshell\alias");
+	Target = ResolveHome("AppData\Roaming\.emacs.d\eshell\alias")
     }
 
 function PromptYesNo([string] $question) {
