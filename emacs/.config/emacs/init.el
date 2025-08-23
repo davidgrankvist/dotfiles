@@ -28,6 +28,9 @@
 ;; Whitespace in diffs
 (add-hook 'diff-mode-hook #'whitespace-mode)
 
+;; Put the ediff command window in the current frame instead of a popup
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
 ;; --- Org mode ---
 
 (global-set-key (kbd "C-c l") #'org-store-link)
