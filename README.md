@@ -37,8 +37,6 @@ The Windows-specific parts are under `windows/`. They use custom scripts to crea
 
 Files under `windows/windows_home` are mapped to the corresponding paths in the home directory. A few links are picked from outside of `windows/` and need to be manually specified in `windows/mappings.ps1`.
 
-To create symlinks on Windows you need to run an administrator shell, so the setup script requires that as well.
-
 Run the setup script.
 ```powershell
 cd dotfiles/windows

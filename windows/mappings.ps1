@@ -67,7 +67,8 @@ function CreateSymlink {
             return
         }
     }
-    New-Item -ItemType SymbolicLink -Path $Target -Target $Source -Force >$null
+    # Delegate to cmd.exe, because New-Item requires an administrator shell to make a link
+    cmd.exe /C mklink "$Target" "$Source" >$null 2>&1
 }
 
 function RemoveSymlink([string] $target) {
